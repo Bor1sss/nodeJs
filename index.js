@@ -66,7 +66,7 @@ dice.roll();
 
 
 
-console.log('TASK 4')
+console.log('TASK 5')
 class Logger extends EventEmitter {
     info(message) {
         this.emit('INFO', message);
