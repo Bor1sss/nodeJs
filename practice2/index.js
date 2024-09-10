@@ -18,3 +18,5 @@ logger.errorSync('Файл поврежден синхронно');
 console.log(logger.readLogSync());
 
 console.log(logger.readLog());
+
+logger.log();

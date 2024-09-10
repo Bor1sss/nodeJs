@@ -84,6 +84,17 @@ class Logger {
     error(message) {
         this.writeLog('ERROR', message);
     }
+
+    log(){
+        try {
+            const data = fs.readFileSync(this.#logFilePath, 'utf8');
+            const lines = data.split('\n').length;
+            console.log(`Количество строк в файле: ${lines}`);
+        } catch (err) {
+            console.error('Ошибка при чтении файла:', err);
+        }
+    }
+
 }
 
 export { Logger };
