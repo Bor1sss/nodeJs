@@ -5,13 +5,13 @@ const __filename = import.meta.filename;
 
 const __dirname = import.meta.dirname;
 
-const pathToFolder = path.join(__dirname, 'files');
-const pathToFile = path.join(pathToFolder, 'data.txt');
+const pathToFolder = path.join(__dirname, 'folder');
+const pathToFile = path.join(pathToFolder, 'text.txt');
 
 console.log(pathToFolder);
 console.log(pathToFile);
 
-const buff = Buffer.from('NODEJS Program');
+const buff = Buffer.from('Node js');
 
 const createFolderIfNotExists = async (folderPath) => {
     await fs.mkdir(folderPath);
@@ -19,7 +19,7 @@ const createFolderIfNotExists = async (folderPath) => {
 
 const writeFile = async (filePath, buffer) => {
     await fs.writeFile(filePath, buffer);
-    console.log('Файл успішно записаний');
+    console.log('Success');
 };
 
 const readFile = async (filePath) => {
