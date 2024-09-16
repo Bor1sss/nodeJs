@@ -3,7 +3,7 @@ import path from "node:path";
 const __filename = import.meta.filename;
 const __dirname = import.meta.dirname;
 
-const rStream = fs.createReadStream(path.resolve(__dirname, 'file.txt'), {
+const rStream = fs.createReadStream(path.resolve(__dirname, 'file1.txt'), {
     encoding: 'utf8',
     highWaterMark: 1,
 });
